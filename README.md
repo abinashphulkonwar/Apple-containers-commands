@@ -1,3 +1,9 @@
+# Start container system
+container system start
+
+# Stop container system
+container system stop
+
 # List all named volumes
 container volume ls
 
@@ -15,3 +21,10 @@ container system prune
 
 # System prune including all unused volumes
 container system prune --volumes
+
+# Build command with Docker file
+container build -t imagename -f Dockerfile.dev .
+
+# Volume
+container run --rm -p 3000:3000 -v $(pwd):/app app_node_modules:/app/node_modules imagename
+
