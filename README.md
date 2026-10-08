@@ -1,3 +1,7 @@
+**Buid Image**
+
+container build -t imagename -f Dockerfile.dev .
+
 **Start container system**
 
 container system start
